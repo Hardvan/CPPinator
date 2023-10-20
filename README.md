@@ -2,6 +2,10 @@
 
 CPPinator is a Python automation script designed for compiling and running multiple C++ files in a specified directory. It simplifies the process of handling multiple C++ programs and provides a clear and organized output for each program's execution.
 
+## Demonstration YouTube Video
+
+[![CPPinator Demonstration](./video/thumbnail2.png)](https://youtu.be/qgBa7JOgGF4)
+
 ## How it works
 
 1. The script allows you to specify a directory path where your C++ source code files are located.
