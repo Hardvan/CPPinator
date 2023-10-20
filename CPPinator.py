@@ -14,14 +14,14 @@ def compile_and_run_cpp_files(directory_path):
     if not cpp_files:
         print("No .cpp files found in the directory.")
         return
-    print("List of .cpp files:")
-    for cpp_file in cpp_files:
-        print(cpp_file)
+    print("List of .cpp files:\n")
+    for i, cpp_file in enumerate(cpp_files):
+        print(f"{i+1}) \033[94m{cpp_file}\033[0m")
 
     # Run all the .cpp files
     success = True
-    print("\nRunning .cpp files:")
-    for cpp_file in cpp_files:
+    print("\nRunning .cpp files:\n")
+    for i, cpp_file in enumerate(cpp_files):
 
         # Compile the C++ file
         compile_command = ['g++', cpp_file, '-o', a_exe]
@@ -49,7 +49,8 @@ def compile_and_run_cpp_files(directory_path):
                 print(f"Errors while running {cpp_file}:")
                 print(run_errors.decode())
             else:
-                print(f"{cpp_file} Output:")
+                # Enclose the file name in blue color:
+                print(f"{i+1}) \033[94m{cpp_file}\033[0m")
                 print(run_output.decode())
         else:
             print(f"Failed to compile {cpp_file}:")
