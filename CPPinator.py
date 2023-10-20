@@ -7,7 +7,9 @@ def compile_and_run_cpp_files(directory_path):
     a_exe = 'a.exe'  # Name of the compiled executable
 
     # Change the current working directory to the specified path
+    print(f"Changing working directory...\n")
     os.chdir(directory_path)
+    print(f"Current working directory: \033[94m{os.getcwd()}\033[0m\n")
 
     # Get all the .cpp files in the directory
     cpp_files = [f for f in os.listdir() if f.endswith(".cpp")]
@@ -57,13 +59,13 @@ def compile_and_run_cpp_files(directory_path):
             print(compile_errors.decode())
             success = False
 
-    if success:
-        print("\n✅ Ran all C++ files successfully.")
-    else:
-        print("\n❌ Some C++ files failed to compile/run.")
-
     # Delete the compiled executable
     os.remove(a_exe)
+
+    if success:
+        print("✅ \033[92mRan all C++ files successfully.\033[0m")
+    else:
+        print("❌ \033[91mSome C++ files failed to compile/run.\033[0m")
 
 
 if __name__ == "__main__":
