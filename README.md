@@ -22,7 +22,7 @@ CPPinator is a Python automation script designed for compiling and running multi
 
 1. Ensure you have Python and a C++ compiler (e.g., g++) installed on your system.
 
-2. Clone or download this script to your local machine.
+2. Clone or download the `CPPinator.py` script to your local machine.
 
 3. Open the script and update the `directory_path` variable to point to the directory containing your C++ files.
 
@@ -30,7 +30,7 @@ CPPinator is a Python automation script designed for compiling and running multi
 
 ## Example Output
 
-Here's an example of the script's output when run with a list of C++ files:
+Here's an example of the script's output when run with a list of C++ files in the `Basic Problems` directory.
 
 List of .cpp files:
 
@@ -46,40 +46,40 @@ Running .cpp files:
 
 1. `count_digits.cpp`
 
-   Number of digits in 123456789 is:  
-   9  
-   9  
+   Number of digits in 123456789 is:
+   9
+   9
    9
 
-2. `divisors.cpp`  
-   Divisors of 100 are:  
-   1 100 2 50 4 25 5 20 10  
-   Divisors of 100 are:  
+2. `divisors.cpp`
+   Divisors of 100 are:
+   1 100 2 50 4 25 5 20 10
+   Divisors of 100 are:
    1 2 4 5 10 20 25 50 100
 
-3. `gcd.cpp`  
-   GCD of 12 and 15 is:  
-   3  
+3. `gcd.cpp`
+   GCD of 12 and 15 is:
+   3
    3
 
-4. `palindrome_number.cpp`  
+4. `palindrome_number.cpp`
    12321 is palindrome: 1
 
-5. `prime.cpp`  
-   100 is not prime  
+5. `prime.cpp`
+   100 is not prime
    100 is not prime
 
-6. `reverse_array.cpp`  
-   Original array:  
-   1 2 3 4 5  
-   Reversed array:  
-   1 2 3 4 5  
-   Reversed array:  
-   5 4 3 2 1  
-   Reversed array:  
+6. `reverse_array.cpp`
+   Original array:
+   1 2 3 4 5
+   Reversed array:
+   1 2 3 4 5
+   Reversed array:
+   5 4 3 2 1
+   Reversed array:
    1 2 3 4 5
 
-7. `reverse_number.cpp`  
+7. `reverse_number.cpp`
    Reverse of 123456789 is: 987654321
 
 ✅ Ran all C++ files successfully.
