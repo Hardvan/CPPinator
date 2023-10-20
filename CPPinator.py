@@ -7,7 +7,7 @@ def compile_and_run_cpp_files(directory_path):
     a_exe = 'a.exe'  # Name of the compiled executable
 
     # Change the current working directory to the specified path
-    print(f"Changing working directory...\n")
+    print("Changing working directory...\n")
     os.chdir(directory_path)
     print(f"Current working directory: \033[94m{os.getcwd()}\033[0m\n")
 
@@ -33,7 +33,7 @@ def compile_and_run_cpp_files(directory_path):
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE
         )
-        compile_output, compile_errors = compile_process.communicate()
+        _, compile_errors = compile_process.communicate()
 
         # Compilation successful
         if compile_process.returncode == 0:
