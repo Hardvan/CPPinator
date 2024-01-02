@@ -17,8 +17,8 @@ void reverseArray(int arr[], int n)
     }
 
     // OR (more concise)
-    for (int i = 0; i < n / 2; i++)
-        swap(arr[i], arr[n - i - 1]);
+    // for (int i = 0; i < n / 2; i++)
+    //     swap(arr[i], arr[n - i - 1]);
 }
 
 // Using recursion
@@ -57,21 +57,18 @@ int main()
     cout << endl;
 
     reverseArray(arr, n);
-
     cout << "Reversed array: " << endl;
     for (int i = 0; i < n; i++)
         cout << arr[i] << " ";
     cout << endl;
 
     reverseArray2(arr, 0, n - 1);
-
     cout << "Reversed array: " << endl;
     for (int i = 0; i < n; i++)
         cout << arr[i] << " ";
     cout << endl;
 
     reverseArray3(arr, n);
-
     cout << "Reversed array: " << endl;
     for (int i = 0; i < n; i++)
         cout << arr[i] << " ";
