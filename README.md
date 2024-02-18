@@ -76,6 +76,7 @@ List of .cpp files:
 Running .cpp files:
 
 1. `count_digits.cpp` (1.07s)
+
    No. of digits in 123456789 is:  
    9  
    9  
@@ -83,6 +84,7 @@ Running .cpp files:
    Expected: 9
 
 2. `divisors.cpp` (1.14s)
+
    Divisors of 100 are:  
    1 100 2 50 4 25 5 20 10  
    Divisors of 100 are:  
@@ -90,21 +92,25 @@ Running .cpp files:
    Expected: 1 2 4 5 10 20 25 50 100
 
 3. `gcd.cpp` (1.16s)
+
    GCD of 12 and 15 is:  
    3  
    3  
    Expected: 3
 
 4. `palindrome_number.cpp` (1.07s)
+
    12321 is palindrome: true  
    Expected: true
 
 5. `prime.cpp` (1.11s)
+
    100 is not prime  
    100 is not prime  
    Expected: not prime
 
 6. `reverse_array.cpp` (1.05s)
+
    Original array:  
    1 2 3 4 5  
    Reversed array using two pointers:  
@@ -116,6 +122,7 @@ Running .cpp files:
    Expected: 5 4 3 2 1
 
 7. `reverse_number.cpp` (1.24s)
+
    Reverse of 123456789 is: 987654321  
    Expected: 987654321
 

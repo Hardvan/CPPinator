@@ -5,7 +5,7 @@ with open("app/README.md", "r") as f:
 
 setup(
     name="CPPinator",
-    version="1.0.2",
+    version="1.0.3",
     author="Hardik Pawar",
     author_email="hardikpawarh@gmail.com",
     description="CPPinator is a Python automation script designed for compiling and running multiple C++ files in a specified directory. It simplifies the process of handling multiple C++ programs and provides a clear and organized output for each program's execution along with the execution time for each program.",
