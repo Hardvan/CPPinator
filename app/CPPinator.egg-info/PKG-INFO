@@ -1,14 +1,23 @@
+Metadata-Version: 2.1
+Name: CPPinator
+Version: 1.0.0
+Summary: CPPinator is a Python automation script designed for compiling and running multiple C++ files in a specified directory. It simplifies the process of handling multiple C++ programs and provides a clear and organized output for each program's execution along with the execution time for each program.
+Home-page: https://github.com/Hardvan/CPPinator
+Author: Hardik Pawar
+Author-email: hardikpawarh@gmail.com
+License: UNKNOWN
+Keywords: C++,automation,script,compile,run,multiple,programs,CPPinator
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
 # CPPinator
 
 CPPinator is a Python automation script designed for compiling and running multiple C++ files in a specified directory. It simplifies the process of handling multiple C++ programs and provides a clear and organized output for each program's execution along with the execution time for each program.
-
-## CPPinator on PyPI
-
-View the CPPinator package on PyPI [here](https://pypi.org/project/CPPinator/).
-
-## Demonstration Video
-
-[![CPPinator Demonstration](./video/thumbnail2.png)](https://youtu.be/qgBa7JOgGF4)
 
 ## How it works
 
@@ -119,15 +128,6 @@ Running .cpp files:
    Reverse of 123456789 is: 987654321
    Expected: 987654321
 
-✅ Ran all C++ files successfully. (7.84s)
+âœ… Ran all C++ files successfully. (7.84s)
 
-## Run the following commands to update the package (for maintainers)
 
-1. Change version in `setup.py`
-2. Run the following commands
-
-   ```bash
-   python setup.py bdist_wheel sdist
-   twine check dist/*
-   twine upload dist/*
-   ```

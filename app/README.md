@@ -2,14 +2,6 @@
 
 CPPinator is a Python automation script designed for compiling and running multiple C++ files in a specified directory. It simplifies the process of handling multiple C++ programs and provides a clear and organized output for each program's execution along with the execution time for each program.
 
-## CPPinator on PyPI
-
-View the CPPinator package on PyPI [here](https://pypi.org/project/CPPinator/).
-
-## Demonstration Video
-
-[![CPPinator Demonstration](./video/thumbnail2.png)](https://youtu.be/qgBa7JOgGF4)
-
 ## How it works
 
 1. The script allows you to specify a directory path where your C++ source code files are located.
@@ -120,14 +112,3 @@ Running .cpp files:
    Expected: 987654321
 
 ✅ Ran all C++ files successfully. (7.84s)
-
-## Run the following commands to update the package (for maintainers)
-
-1. Change version in `setup.py`
-2. Run the following commands
-
-   ```bash
-   python setup.py bdist_wheel sdist
-   twine check dist/*
-   twine upload dist/*
-   ```
