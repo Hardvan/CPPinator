@@ -57,22 +57,26 @@ int main()
     cout << endl;
 
     reverseArray(arr, n);
-    cout << "Reversed array: " << endl;
+    cout << "Reversed array using two pointers: " << endl;
     for (int i = 0; i < n; i++)
         cout << arr[i] << " ";
     cout << endl;
 
-    reverseArray2(arr, 0, n - 1);
-    cout << "Reversed array: " << endl;
+    int arr2[] = {1, 2, 3, 4, 5};
+    reverseArray2(arr2, 0, n - 1);
+    cout << "Reversed array using recursion: " << endl;
     for (int i = 0; i < n; i++)
-        cout << arr[i] << " ";
+        cout << arr2[i] << " ";
     cout << endl;
 
-    reverseArray3(arr, n);
-    cout << "Reversed array: " << endl;
+    int arr3[] = {1, 2, 3, 4, 5};
+    reverseArray3(arr3, n);
+    cout << "Reversed array using temporary array: " << endl;
     for (int i = 0; i < n; i++)
-        cout << arr[i] << " ";
+        cout << arr3[i] << " ";
     cout << endl;
+
+    cout << "Expected: 5 4 3 2 1\n";
 
     return 0;
 }

@@ -32,6 +32,7 @@ int main()
     cout << "GCD of " << a << " and " << b << " is: " << endl;
     cout << gcd(a, b) << endl;
     cout << gcd2(a, b) << endl;
+    cout << "Expected: 3\n";
 
     return 0;
 }

@@ -22,6 +22,10 @@ bool palindrome(int n)
 int main()
 {
     int n = 12321;
+
+    cout << boolalpha;
     cout << n << " is palindrome: " << palindrome(n) << endl;
+    cout << "Expected: true\n";
+
     return 0;
 }

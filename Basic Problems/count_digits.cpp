@@ -36,9 +36,11 @@ int count_digits1(int n)
 int main()
 {
     int n = 123456789;
-    cout << "Number of digits in " << n << " is: " << endl;
+    cout << "No. of digits in " << n << " is: " << endl;
     cout << count_digits1(n) << endl;
     cout << count_digits2(n) << endl;
     cout << count_digits3(n) << endl;
+    cout << "Expected: 9\n";
+
     return 0;
 }

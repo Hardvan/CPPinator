@@ -21,6 +21,9 @@ int reverse(int n)
 int main()
 {
     int n = 123456789;
+
     cout << "Reverse of " << n << " is: " << reverse(n) << endl;
+    cout << "Expected: 987654321\n";
+
     return 0;
 }

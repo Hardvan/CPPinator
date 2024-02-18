@@ -53,5 +53,7 @@ int main()
         cout << i << " ";
     cout << endl;
 
+    cout << "Expected: 1 2 4 5 10 20 25 50 100\n";
+
     return 0;
 }

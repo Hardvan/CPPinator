@@ -13,10 +13,8 @@ bool isPrime(int n)
         return true;
 
     for (int i = 2; i <= sqrt(n); i++)
-    {
         if (n % i == 0)
             return false;
-    }
 
     return true;
 }
@@ -46,6 +44,7 @@ int main()
 
     cout << n << " is " << (isPrime(n) ? "prime" : "not prime") << endl;
     cout << n << " is " << (isPrime2(n) ? "prime" : "not prime") << endl;
+    cout << "Expected: not prime\n";
 
     return 0;
 }

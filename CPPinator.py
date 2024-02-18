@@ -4,11 +4,20 @@ import time
 
 
 def compile_and_run_cpp_files(directory_path):
+    """Compile and run all the .cpp files in the specified directory. The compiled executable is deleted after running the program. The time taken to compile and run each .cpp file is printed, along with the output of the program. If any .cpp file fails to compile or run, the error message is printed, and the total time taken is also printed. The function assumes that the C++ compiler (g++) is installed and added to the system PATH.
+
+    Args:
+        directory_path (str): The path of the directory containing the .cpp files.
+    """
 
     a_exe = 'a.exe'  # Name of the compiled executable
 
     # Change the current working directory to the specified path
     print("Changing working directory...")
+    if not os.path.exists(directory_path):
+        print(
+            f"The specified directory \033[94m{directory_path}\033[0m does not exist.")
+        return
     os.chdir(directory_path)
     print(f"Current working directory: \033[94m{os.getcwd()}\033[0m\n")
 
@@ -21,11 +30,12 @@ def compile_and_run_cpp_files(directory_path):
     for i, cpp_file in enumerate(cpp_files):
         print(f"{i+1}) \033[94m{cpp_file}\033[0m")
 
-    total_time = 0
+    total_time = 0  # Total time taken to compile & run all the .cpp files
 
     # Run all the .cpp files
-    success = True
     print("\nRunning .cpp files:\n")
+    success = True  # Flag to check if all the .cpp files ran successfully
+    problem_files = []  # List of .cpp files that failed to compile/run
     for i, cpp_file in enumerate(cpp_files):
 
         start_time = time.time()
@@ -64,10 +74,13 @@ def compile_and_run_cpp_files(directory_path):
                 print(
                     f"{i+1}) \033[94m{cpp_file}\033[0m \033[90m({time_s}s)\033[0m")
                 print(run_output.decode())  # Print the output of the program
+
+        # Compilation failed
         else:
             print(f"Failed to compile {cpp_file}:")
             print(compile_errors.decode())
             success = False
+            problem_files.append(cpp_file)
 
     # Delete the compiled executable
     os.remove(a_exe)
@@ -78,11 +91,13 @@ def compile_and_run_cpp_files(directory_path):
         print(
             f"✅ \033[92mRan all C++ files successfully.\033[0m \033[90m({total_time}s)\033[0m")
     else:
-        print("❌ \033[91mSome C++ files failed to compile/run.\033[0m")
+        print(
+            f"❌ \033[91mSome C++ files failed to compile/run.\033[0m \033[90m({total_time}s)\033[0m")
+        print("Problem files:")
+        for i, problem_file in enumerate(problem_files):
+            print(f"{i+1}) \033[94m{problem_file}\033[0m")
 
 
 if __name__ == "__main__":
 
-    directory_path = './Basic Problems/'
-
-    compile_and_run_cpp_files(directory_path)
+    compile_and_run_cpp_files(directory_path='./Basic Problems/')
