@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: CPPinator
-Version: 1.0.3
+Version: 1.0.4
 Summary: CPPinator is a Python automation script designed for compiling and running multiple C++ files in a specified directory. It simplifies the process of handling multiple C++ programs and provides a clear and organized output for each program's execution along with the execution time for each program.
 Home-page: https://github.com/Hardvan/CPPinator
 Author: Hardik Pawar
@@ -63,7 +63,7 @@ CPPinator is a Python automation script designed for compiling and running multi
    compile_and_run_cpp_files("path/to/your/directory")
    ```
 
-   View the `run.py` file in the `example` directory for a working example.
+   View the `run.py` file for an example of how to use the `CPPinator` package.
 
 ## Example Output
 

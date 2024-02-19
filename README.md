@@ -54,7 +54,7 @@ View the CPPinator package on PyPI [here](https://pypi.org/project/CPPinator/).
    compile_and_run_cpp_files("path/to/your/directory")
    ```
 
-   View the `run.py` file in the `example` directory for a working example.
+   View the `run.py` file for an example of how to use the `CPPinator` package.
 
 ## Example Output
 
